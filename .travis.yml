@@ -6,4 +6,4 @@ branches:
   only:
     - master
 env:
-	- COVERALLS=1
+  - COVERALLS=1
