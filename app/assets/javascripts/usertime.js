@@ -1,5 +1,5 @@
 /*
- * usertime.js v0.1.0
+ * usertime.js v0.1.1
  * https://github.com/emn178/usertime.js
  *
  * Copyright 2015, emn178@gmail.com
@@ -40,5 +40,5 @@
     $(TAG).each(convert);
   }
 
-  $(document).ready(convertAll);
+  $(document).on('ready page:load', convertAll);
 })(jQuery, window, document);
