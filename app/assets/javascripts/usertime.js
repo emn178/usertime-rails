@@ -1,7 +1,7 @@
 /**
  * [usertime.js]{@link https://github.com/emn178/usertime.js}
  *
- * @version 0.1.2
+ * @version 0.1.3
  * @author Chen, Yi-Cyuan [emn178@gmail.com]
  * @copyright Chen, Yi-Cyuan 2015-2016
  * @license MIT
@@ -15,7 +15,7 @@
 
   window.UserTime = {
     DefaultFormat: 'YYYY-MM-DD HH:mm:ss',
-    convert: convert
+    convert: convertAll
   };
 
   function convert() {
@@ -48,9 +48,7 @@
           return;
         }
         Array.from(record.addedNodes).forEach(function (node) {
-          if (node.tagName == 'USERTIME') {
-            convert.call(node);
-          }
+          $(TAG, node).each(convert);
         });
       });
     });

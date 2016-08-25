@@ -1,3 +1,7 @@
+# v0.1.3 / 2016-08-25
+
+Upgraded usertime.js to v0.1.3
+
 # v0.1.2 / 2016-08-23
 
 Upgraded usertime.js to v0.1.2
